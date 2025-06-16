@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: black;
+    text-decoration: none;
+    
+
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    gap:10px;
+    border-radius: 5px;
+}
+
+.navbar2{
+     display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: black;
+}
+.navbar a, .navbar2 a {
+    color: black;
+    text-decoration: none;
+    gap:10px;
+    border-radius: 5px;
+}
+.summary {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+    padding-top: 20px;
+}
+.paragraph {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.about-me {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.8;
+ transition: width 0.4s ease-in-out;
+}
+.about-me:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.about-me h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.about-me p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+.about-me a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}   
+.about-me a:hover {
+  text-decoration: underline;
+}
+.summary {
+  text-decoration:dotted underline;
+}
+.about-body {
+    background-color: beige;
+}
+
+.form-container {
+   display: flex;
+   flex-direction: row;
+    
+    padding: 20px;
+    background-color: #e4e4ac;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
