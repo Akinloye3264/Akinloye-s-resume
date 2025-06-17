@@ -347,21 +347,21 @@ form textarea {
     transform: translateY(-6px) scale(1.03);
 }
 
-
 footer {
     width: 100%;
-    position: fixed;
+    position: fixed;  /* makes it stick to the bottom of the screen */
     left: 0;
     bottom: 0;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     text-align: center;
     color: #64748b;
     font-size: 1em;
-    padding: 12px 0;
+    padding: 10px 0;
     box-shadow: 0 -2px 12px 0 rgba(59, 130, 246, 0.07);
-    z-index: 200;
     animation: fadeInUp 1.7s;
+    z-index: 1000;
 }
+
 
 
 @media (max-width: 1100px) {
