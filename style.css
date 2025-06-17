@@ -349,7 +349,7 @@ form textarea {
 
 footer {
     width: 100%;
-    position: fixed;  /* makes it stick to the bottom of the screen */
+    position: fixed;  
     left: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -478,33 +478,131 @@ footer {
     text-align: center;
 }   
 
+/* --- DARK MODE --- */
 .dark-mode {
-    background: linear-gradient(120deg, #050b29 0%, #757576 100%);
-    color: #cfbfbf;
+    background: #181a1b !important;
+    color: #f3f4f6 !important;
 }
-.dark-mode .about-card,
+
+.dark-mode header,
+.dark-mode footer {
+    background: #23272f !important;
+    color: #bfc9d1 !important;
+    box-shadow: 0 2px 16px 0 rgba(20, 20, 20, 0.15);
+}
+
+.dark-mode .navbar,
+.dark-mode .navbar2,
+.dark-mode .navbar3 {
+    background: transparent !important;
+}
+
+.dark-mode .navbar a,
+.dark-mode .navbar2 a,
+.dark-mode .navbar3 a {
+    color: #f3f4f6 !important;
+    background: transparent !important;
+    transition: color 0.2s;
+}
+
+.dark-mode .navbar a:hover,
+.dark-mode .navbar2 a:hover,
+.dark-mode .navbar3 a:hover {
+    background: #2563eb !important;
+    color: #fff !important;
+    box-shadow: 0 2px 12px #2563eb40;
+}
+
 .dark-mode .about-me1,
 .dark-mode .about-me2,
 .dark-mode .about-me3,
+.dark-mode .about-me,
 .dark-mode .form-container,
-.dark-mode .card {
-    background: linear-gradient(120deg, #232946 60%, #16161a 100%);
-    color: #f4f4f4;
-    box-shadow: 0 4px 24px 0 rgba(44, 44, 84, 0.25);
+.dark-mode .card,
+.dark-mode .project-list li {
+    background: linear-gradient(120deg, #23272f 60%, #181a1b 100%) !important;
+    color: #f3f4f6 !important;
+    box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.18);
 }
-.dark-mode header,
-.dark-mode footer {
-    background: #2e365b;
-    color: #f4f4f4;
-    border-color: #16161a;
+
+.dark-mode .summary1,
+.dark-mode .summary2,
+.dark-mode .summary3,
+.dark-mode .form-title {
+    background: #23272f !important;
+    color: #f3f4f6 !important;
+    text-shadow: 0 2px 8px #181a1b80;
 }
-.dark-mode .navbar a {
-    color: #81777780;
+
+.dark-mode .paragraph1,
+.dark-mode .paragraph2,
+.dark-mode .paragraph3,
+.dark-mode .paragraph4,
+.dark-mode .paragraph,
+.dark-mode .card h2,
+.dark-mode .card h3,
+.dark-mode .card h4,
+.dark-mode .card p,
+.dark-mode .card li,
+.dark-mode .project-list h2,
+.dark-mode .project-list p,
+.dark-mode .contact-list li,
+.dark-mode .contact-list a {
+    color: #f3f4f6 !important;
+    text-shadow: 0 1px 8px #181a1b40;
 }
-.dark-mode .navbar a:hover {
-    background: #f59e42;
-    color: #232946;
+
+.dark-mode .btn,
+.dark-mode button[type="submit"] {
+    background: linear-gradient(90deg, #2563eb 60%, #f59e42 100%) !important;
+    color: #fff !important;
 }
+
+.dark-mode .btn:hover,
+.dark-mode button[type="submit"]:hover {
+    background: linear-gradient(90deg, #f59e42 60%, #2563eb 100%) !important;
+}
+
+.dark-mode form label {
+    color: #bfc9d1 !important;
+}
+
+.dark-mode form input[type="email"],
+.dark-mode form input[type="text"],
+.dark-mode form textarea {
+    background: #23272f !important;
+    color: #f3f4f6 !important;
+    border: 1.5px solid #374151 !important;
+}
+
+.dark-mode form input:focus,
+.dark-mode form textarea:focus {
+    border: 1.5px solid #2563eb !important;
+    box-shadow: 0 0 0 2px #2563eb55;
+}
+
+.dark-mode form input::placeholder,
+.dark-mode form textarea::placeholder {
+    color: #bfc9d1 !important;
+}
+
+.dark-mode .img-container img {
+    filter: brightness(0.85) contrast(1.1);
+}
+.dark-mode .paragraph{
+    background: linear-gradient(120deg, #23272f 60%, #181a1b 100%) !important;
+    color: #f3f4f6 !important;
+    box-shadow: 0 4px 24px 0 rgba(20, 20, 20, 0.10);
+    padding: 36px 28px;
+    max-width: 600px;
+    margin: 40px auto 32px auto;
+}
+.summary3{
+    text-decoration: underline;
+}
+.summary1{
+    text-decoration: underline;
+font-size: 4pc;}
 
 .img-container {
   width: 200px;        
