@@ -39,6 +39,8 @@ header {
     animation: navbarFadeIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
+
+
 @keyframes navbarFadeIn {
     0% { opacity: 0; transform: scale(0.95);}
     100% { opacity: 1; transform: scale(1);}
@@ -470,15 +472,17 @@ footer {
 }
 .summary1{
     text-align: center;
+    color: orange;
 }
 .summary2{
     text-align: center;
+    color: orange;
 }
 .summary3{
     text-align: center;
 }   
 
-/* --- DARK MODE --- */
+
 .dark-mode {
     background: #181a1b !important;
     color: #f3f4f6 !important;
@@ -489,6 +493,16 @@ footer {
     background: #23272f !important;
     color: #bfc9d1 !important;
     box-shadow: 0 2px 16px 0 rgba(20, 20, 20, 0.15);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggleNavbarBtn{
+    display: none;
 }
 
 .dark-mode .navbar,
@@ -597,9 +611,7 @@ footer {
     max-width: 600px;
     margin: 40px auto 32px auto;
 }
-.summary3{
-    text-decoration: underline;
-}
+
 
 
 .img-container {
@@ -616,6 +628,23 @@ footer {
   padding-top: 20px; 
   margin-bottom: 20px; 
 }
+@media (max-width: 600px) {
+    .navbar, .navbar2, .navbar3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 6px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px 0 rgba(59, 130, 246, 0.10);
+    }
+    .navbar a, .navbar2 a, .navbar3 a {
+        padding: 7px 12px;
+        font-size: 0.98em;
+        width: 100%;
+        text-align: center; 
+    }
+    
+}
 
 .img-container img {
   width: 100%;
@@ -623,3 +652,79 @@ footer {
   object-fit: cover;  
   display: block;
 }
+
+
+body, .main-content {
+    padding-top: 100px; 
+    padding-bottom: 70px;
+}
+
+
+@media (max-width: 900px) {
+    body, .main-content {
+        padding-top: 110px; 
+    }
+}
+
+
+@media (max-width: 700px) {
+    body, .main-content {
+        padding-top: 120px; 
+    }
+}
+
+@media (max-width: 600px) {
+    body, .main-content {
+        padding-top: 200px; 
+    }
+}
+@media (max-width: 500px) {
+    body, .main-content {
+        padding-top: 220px; 
+    }
+}
+@media (max-width: 400px) {
+    body, .main-content {
+        padding-top: 240px; 
+    }
+}
+@media (max-width: 300px) {
+    body, .main-content {
+        padding-top: 260px; 
+    }
+}   
+@media (max-width: 200px) {
+    body, .main-content {
+        padding-top: 280px; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar{
+        display: block;
+    }
+
+    .toggleNavbarBtn{
+        display: block;
+    }
+}
+
+.phone-navbar{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 80px;
+    right: 3px;
+}
+
+.phone-navbar a {
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+
+.homepage{
+    text-decoration: none;
+    color: #5d6268;
+}
+

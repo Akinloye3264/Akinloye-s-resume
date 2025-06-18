@@ -9,17 +9,26 @@
 </head>
 <script src="script.js"></script>
 <body>
+
+
 <header>
-    <button onclick="toggleDarkMode()" style="position:fixed;top:20px;right:20px;z-index:200;border:none;background:#0b0b0c;color:#fff;padding:10px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px rgba(59,130,246,0.10);font-weight:600;">
-   Dark Mode
-</button>
+   
     <navbar class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About </a>
         <a href="projects.html">Projects</a>
         <a href="contacts.html">Contact</a>  
     </navbar>
-    </header>
+  
+    <div style="display: flex; gap: 4px; align-items: center;">
+        <button onclick="toggleDarkMode()" style="z-index:200;border:none;background:#0b0b0c;color:#fff;padding:10px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px rgba(59,130,246,0.10);font-weight:600;">
+            <icon="🌙" >🌙</icon>
+        </button>
+        
+    </div>
+   
+</header>
+
     <div class="img-container">
    <img src="pic.jpg" alt="Profile photo">
  </div>
@@ -55,8 +64,8 @@
 <div class="bg-visual visual1"></div>
 <div class="bg-visual visual2"></div>
 <div class="bg-visual visual3"></div>
+
 <footer>
     <p>&copy; 2025 Akinloye's Portfolio</p>
 </footer>
-
 </html>
