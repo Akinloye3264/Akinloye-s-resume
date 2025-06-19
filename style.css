@@ -385,11 +385,14 @@ footer {
 
     @media (max-width:768px) {
         header{
+            display: flex;
+            flex-wrap: wrap;
             margin-right: 20px;
             padding: 2px;
         }
         
     }
+    
     .form-container {
         max-width: 90vw;
         padding: 24px 10px;
