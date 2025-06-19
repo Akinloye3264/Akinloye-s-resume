@@ -382,6 +382,14 @@ footer {
         max-width: 90vw;
         padding: 32px 18px;
     }
+
+    @media (max-width:768px) {
+        header{
+            margin-right: 20px;
+            padding: 2px;
+        }
+        
+    }
     .form-container {
         max-width: 90vw;
         padding: 24px 10px;
@@ -664,7 +672,7 @@ footer {
   height: 200px;      
   margin: 0 auto;
   overflow: hidden;    
-  border-radius: 12px; 
+  border-radius: 50%; 
   box-shadow: 0 2px 12px #e0e7ff;
   background: #5d6268;
   display: flex;
