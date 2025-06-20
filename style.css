@@ -202,10 +202,11 @@ body, .main-content {
     display: flex;
     align-items: center;
     gap: 8px;
+   
 }
 
 .contact-list a {
-    color: #2563eb;
+    color: orange;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s;
@@ -277,7 +278,7 @@ body, .main-content {
 }
 
 .form-title {
-    color: #1e293b;
+    color: orange;
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 18px;
@@ -372,12 +373,12 @@ footer {
     width: 100%;
     position: fixed;  
     left: 0;
-    bottom: 0;
+    bottom:0;
     background: rgba(255, 255, 255, 0.95);
     text-align: center;
     color: #64748b;
     font-size: 1em;
-    padding: 10px 0;
+    padding: 20px 0;
     box-shadow: 0 -2px 12px 0 rgba(59, 130, 246, 0.07);
     animation: fadeInUp 1.7s;
     z-index: 1000;
@@ -551,6 +552,7 @@ footer {
 }
 .summary3{
     text-align: center;
+    color: orange;
 }   
 
 .dark-mode {
@@ -759,3 +761,11 @@ footer {
   }
 }
 
+.Hire a{
+     background: linear-gradient(90deg, #f59e42 60%, #3b82f6 100%);
+    position: relative;
+    left: 40%;
+     text-decoration: none;
+     border-radius: 5px;
+     
+}
