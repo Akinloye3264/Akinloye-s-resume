@@ -556,7 +556,7 @@ footer {
 }   
 
 .dark-mode {
-    background: #181a1b ;
+    background: linear-gradient(135deg, #000000, #343740); 
     color: #f3f4f6 ;
 }
 
