@@ -142,6 +142,7 @@ body, .main-content {
     text-shadow: 0 2px 8px #e0e7ff;
     animation: summaryPopIn 1.1s cubic-bezier(.68,-0.55,.27,1.55);
     overflow-x: hidden;
+   
 }
 
 @keyframes summaryPopIn {
