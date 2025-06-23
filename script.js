@@ -1,14 +1,5 @@
-function toggleDarkMode() {
-  const isDark = document.body.classList.toggle('dark-mode');
-  localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-}
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-  }
-});
-
+// For dark mode
  function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark-mode');
   localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
@@ -19,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('dark-mode');
   }
 
+  // For greeting
   const nameForm = document.getElementById('nameForm');
   const nameInput = document.getElementById('nameInput');
   const greetingElem = document.getElementById('greeting');
@@ -58,6 +50,28 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// For the image 
+window.addEventListener('DOMContentLoaded', () => {
+  
 
+  const profileImg = document.getElementById('profileImg');
+  const modal = document.getElementById('imgModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeBtn = document.querySelector('.close');
 
-
+  if (profileImg && modal && modalImg && closeBtn) {
+    profileImg.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+    };
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  }
+});
