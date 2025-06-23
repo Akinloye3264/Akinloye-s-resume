@@ -708,11 +708,13 @@ footer {
     margin: 40px auto 32px auto;
 }
 .img-container {
-  width: 20%;        
+  width: 200px;        
   height: 200px;      
   margin: 10px auto;
   border-radius: 20px;
   overflow: hidden;     
+  box-shadow: 0 2px 12px #e0e7ff;
+  background: #5c5c5c;
   display: flex;
   align-items: center;
   justify-content: center;
