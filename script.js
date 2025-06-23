@@ -1,5 +1,5 @@
 
-// For dark mode
+// For dark
  function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark-mode');
   localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
@@ -24,14 +24,14 @@ window.addEventListener('DOMContentLoaded', () => {
     if (hour12 === 0) hour12 = 12;
     let greeting;
     if (hour < 12) {
-      greeting = "Good morning ☀️";
+      greeting = "Good morning ";
     } else if (hour < 18) {
-      greeting = "Good afternoon 🌙";
+      greeting = "Good afternoon ";
     } else {
-      greeting = "Good evening 🌤";
+      greeting = "Good evening ";
     }
     const timeString = ` The time is ${hour12}:${minute} ${ampm}`;
-    return name ? `${timeString}, ${greeting} ${name}.` : `${timeString}, ${greeting}`;
+    return name ? `${timeString}, ${greeting} ${name}. Emmanuel welcomes you🫡.` : `${timeString}, ${greeting}`;
   }
 
   if (greetingElem) {

@@ -706,15 +706,14 @@ footer {
 .img-container {
   width: 200px;        
   height: 200px;      
-  margin: 0 auto;
+  margin: 10px auto;
+  border-radius: 20px;
   overflow: hidden;     
   box-shadow: 0 2px 12px #e0e7ff;
   background: #5c5c5c;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px; 
-  margin-bottom: 20px; 
   max-width: 100vw;
 }
 
