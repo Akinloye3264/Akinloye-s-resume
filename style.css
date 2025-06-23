@@ -281,11 +281,12 @@ body, .main-content {
 .form-title {
     color: orange;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 18px;
     letter-spacing: 0.5px;
     text-shadow: 0 1px 4px #c7d2fe;
     overflow-x: hidden;
+    text-align: center;
 }
 
 form {
@@ -707,13 +708,11 @@ footer {
     margin: 40px auto 32px auto;
 }
 .img-container {
-  width: 200px;        
+  width: 20%;        
   height: 200px;      
   margin: 10px auto;
   border-radius: 20px;
   overflow: hidden;     
-  box-shadow: 0 2px 12px #e0e7ff;
-  background: #5c5c5c;
   display: flex;
   align-items: center;
   justify-content: center;
