@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
       greeting = "Good evening ";
     }
     const timeString = ` The time is ${hour12}:${minute} ${ampm}`;
-    return name ? `${timeString}, ${greeting} ${name}. Emmanuel welcomes you🫡.` : `${timeString}, ${greeting}`;
+    return name ? `${timeString}, ${greeting} ${name}. Special Greetings from Emmanuel🫡.` : `${timeString}, ${greeting}`;
   }
 
   if (greetingElem) {
