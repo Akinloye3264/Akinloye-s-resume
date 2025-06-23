@@ -40,6 +40,8 @@ header {
     100% { opacity: 1; transform: translateY(0);}
 }
 
+
+
 .navbar, .navbar2, .navbar3 {
     width: 100%;
     display: flex;
@@ -194,6 +196,7 @@ body, .main-content {
     padding: 0;
     margin: 0 0 18px 0;
     width: 100%;
+    text-align: justify;
 }
 
 .contact-list li {
@@ -229,6 +232,11 @@ body, .main-content {
     align-items: center;
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+.project-list a{
+    text-decoration: none;
+    color: orange;
 }
 
 .project-list li {
@@ -791,4 +799,29 @@ footer {
     text-decoration: none;
     position: static;
     left: unset;
+}
+
+#nameForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+#nameInput {
+    min-width: 220px;
+    max-width: 350px;
+    width: 60%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 3px solid #c5970c;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1em;
+}
+
+#nameForm .btn {
+    display: block;
+    margin: 0 auto;
 }

@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
       greeting = "Good evening ";
     }
     const timeString = ` The time is ${hour12}:${minute} ${ampm}`;
-    return name ? `${timeString}, ${greeting} ${name}. Special Greetings from Emmanuel😎.` : `${timeString}, ${greeting}`;
+    return name ? `${timeString}, ${greeting} ${name}. Special Greetings from Emmanuel😎.` : `${timeString}, ${greeting}.`;
   }
 
   if (greetingElem) {
@@ -44,7 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
       const name = nameInput.value.trim();
       if (greetingElem) {
         greetingElem.textContent = getGreeting(name);
-      }
+      } 
+      
+      
     });
   }
 });
