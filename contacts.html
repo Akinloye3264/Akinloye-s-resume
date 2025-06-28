@@ -7,74 +7,79 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="contact.jpeg" type="image/jpeg">
 </head>
-<script src="script.js"></script>
 <body>
+<div class="container">
    <header>
-
-    <navbar class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About </a>
+        <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contacts.html">Contact</a>  
-    </navbar>
+    </nav>
   
-    <div style="display: flex; gap: 4px; align-items: center;">
-        <button onclick="toggleDarkMode()" style="z-index:200;border:none;background:#0b0b0c;color:#fff;padding:10px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px rgba(59,130,246,0.10);font-weight:600;">
-            <icon="🌙" >🌙</icon>
+    <div class="darkmode-toggle">
+        <button onclick="toggleDarkMode()" class="darkmode-btn" aria-label="Toggle dark mode">
+            <span role="img" aria-label="moon">🌙</span>
         </button>
-        
     </div>
-  
 </header>
 
-        <div class="about-me3">
-            <h1 class="summary3">Contact Information</h1>
-            <p class="paragraph">I would  love to hear from you! Whether it’s about opportunities, collaboration, or just a quick hello. Feel free to reach out:</p>
-            <ul class="contact-list">
-                <li><strong> Email Address: </strong> Oluwajomilojuakinloye@gmail.com.</li>
-                <li><strong>Phone Number:</strong> +234 9079373049</li>
-                <li><strong>Linkedin:</strong>  <a href="https://www.linkedin.com/in/akinloye-oluwajomiloju-b92a4132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Akinloye Emmanuel Oluwajomiloju</a></li>
-                <li><strong>Github:</strong>  <a href="https://github.com/Akinloye3264?tab=repositories">Akinloye3264</a>.</li>
-                 <li><strong>Location:</strong>  African Leadership University, Kigali, Rwanda. </li>
- </ul>
+<main>
+    <section class="about-me3">
+        <h1 class="summary3">Contact Information</h1>
+        <p class="paragraph">I would love to hear from you! Whether it's about opportunities, collaboration, or just a quick hello. Feel free to reach out:</p>
+        <ul class="contact-list">
+            <li><strong>Email Address:</strong> Oluwajomilojuakinloye@gmail.com</li>
+            <li><strong>Phone Number:</strong> +234 9079373049</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akinloye-oluwajomiloju-b92a4132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Akinloye Emmanuel Oluwajomiloju</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Akinloye3264?tab=repositories">Akinloye3264</a></li>
+            <li><strong>Location:</strong> African Leadership University, Kigali, Rwanda</li>
+        </ul>
+    </section>
+
+    <section class="form-container">
+        <h2 class="form-title">Contact Form</h2>
+        <form id="contactForm">
+            <label for="email">
+                Your email:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="name">
+                Your name:
+                <input type="text" id="name" name="name" required>
+            </label>
+            <label for="phone">
+                Phone Number:
+                <input type="tel" id="phone" name="phone">
+            </label>
+            <label for="message">
+                Your message:
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+        <div id="successMessage" class="success-message" style="display: none;">
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon!</p>
         </div>
-<div class="form-container">
-<h2 class="form-title">Contact Form</h2>
-    <form
-    action="https://formspree.io/f/mdkzzbga"
-    method="POST"
-    >
-    <label>
-        Your email:
-        <input type="email" name="email">
-    </label>
-        <label>
-            Your name:
-            <input type="text" name="name">
-        </label>
-        <label>
-        Phone Number:
-        <input type="text" name="Number">
-        </label>
-        Your message:
-        <textarea name="message" rows="4"></textarea>
-    </label>
-    
-    <button type="submit">Submit</button>
-    </form>
-    </div>
-    </div>
-    <br>
-    <br>
-    <div class="Hire">
-        <a href="https://hire-form.netlify.app/" target="_blank" class="button"> Hire Me </a>
-    </div>   
-</body>
-<br>
+    </section>
+
+    <section class="Hire">
+        <a href="https://hire-form.netlify.app/" target="_blank" class="button">Hire Me</a>
+    </section>
+</main>
+</div>
+
 <div class="bg-visual visual1"></div>
 <div class="bg-visual visual2"></div>
 <div class="bg-visual visual3"></div>
+
 <footer>
     <p>&copy; 2025 Akinloye's Portfolio</p>
 </footer>
+
+<script src="script.js"></script>
+</body>
 </html>

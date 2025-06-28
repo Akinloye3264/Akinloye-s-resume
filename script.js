@@ -77,3 +77,41 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 });
+
+
+// For the form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+ 
+  const formData = new FormData(this);
+  const email = formData.get('email');
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const message = formData.get('message');
+  
+ 
+  if (!email || !name || !message) {
+      alert('Please fill in all required fields.');
+      return;
+  }
+  
+  
+  console.log('Form submitted:', { email, name, phone, message });
+  
+  
+  this.style.display = 'none';
+  
+
+  const successMessage = document.getElementById('successMessage');
+  successMessage.style.display = 'block';
+  
+
+  this.reset();
+  
+
+  setTimeout(() => {
+      successMessage.style.display = 'none';
+      this.style.display = 'block';
+  }, 5000);
+});
